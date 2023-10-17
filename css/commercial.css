@@ -1,0 +1,56 @@
+.lumber-img{
+    background: url(https://gbdmagazine.com/wp-content/uploads/2017/06/GBD45-Evolving-Green-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
+    height: 60vh;
+    position: relative;
+    background-position: 0 -155px;
+}
+.lumber-img::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    height: 11vh;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+}
+.lumber-h{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.blank-page{
+    background: url(https://neweracompanies.com/wp-content/uploads/2021/08/Milwaukee-Rehab-Renderings-01-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lumber{
+    padding: 30px 45px;
+    margin: 5% 11%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    word-spacing: .6rem;
+    font-size: 19px;
+}
+.lumber::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #ffa766, #85b5fd);
+    opacity: .7;
+    z-index: -1;
+}
+
+.lumber li{
+    list-style: square;
+}

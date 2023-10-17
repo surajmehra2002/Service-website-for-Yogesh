@@ -1,0 +1,95 @@
+.img-cont{
+    background-color: black;
+    height: 70vh;
+    position: relative;
+}
+.img-cont::before{
+    content: '';
+    background: url(https://globe-konnect.com/wp-content/uploads/2020/11/contact-banner-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .6;
+    
+}
+.form-cont{
+  width: 350px;
+  padding: 5px;
+}
+.img-cont p{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 56%;
+    text-align: center;
+    font-weight: 700;
+}
+.back{
+    height: 10vh;
+    /* background-color: black; */
+    padding-top: 30px;
+}
+.back h1{
+    font-size: 33px;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    border-radius: 50px;
+    background-color: white;
+}
+.back-emt{
+    /* height: 60vh; */
+}
+
+.contact-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.map{
+    /* box-shadow: 0px 0px 22px -8px black; */
+    width: 350px;
+    margin: 30px 5px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    /* height: 5vh; */
+  }
+  
+  input[type="submit"] {
+    background-color: #7878e1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8f8fe9;
+  }
+  

@@ -1,0 +1,244 @@
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2459.247570437575!2d77.38812104335874!3d28.596687576273514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef898778cb0b%3A0xbb02eb92b085a10a!2sSunil%20sports%20cloths!5e0!3m2!1sen!2sin!4v1686642296193!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="google-site-verification" content="F-_Sfw3Ys889oD9sZhM62loE9CV2GJKAOp1jWuhewlc" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="let's connect free feel to us through email and contact no. after clicking here.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="SEO practices, website visibility, organic traffic, rankings">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | Surya Group</title>
+    <link rel="icon" type="image/png" href="../images/title.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Lexend+Deca&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("9_LcmzKgbIAmwSdy2");//Public_Key..
+        })();
+     </script>
+     <script>
+        function sendemail () {
+
+            
+            if(document.getElementById("name").value==""||document.getElementById("email").value ==""||document.getElementById("message").value ==""){
+                alert('please fill the form before submit !!')
+                if(document.getElementById("name").value==""){
+                    document.getElementById("name").style.border='2px solid red'
+                }else{
+                    document.getElementById("name").style.border='1px solid #ccc' 
+                }
+                if(document.getElementById("email").value ==""){
+                    document.getElementById("email").style.border='2px solid red'
+                }else{
+                    document.getElementById("email").style.border='1px solid #ccc' 
+                }
+                if(document.getElementById("message").value ==""){
+                    document.getElementById("message").style.border='2px solid red'
+                }else{
+                    document.getElementById("message").style.border='1px solid #ccc' 
+                }
+
+            }
+            
+            else{
+                var email = document.getElementById("email").value;
+                var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+                if(emailPattern.test(email)){
+
+                
+                    var templateParams = {
+                        name: document.getElementById("name").value,
+                        email: document.getElementById("email").value,
+                        message: document.getElementById("message").value,
+                
+                    };
+        
+                    emailjs.send('service_59oz9c7', 'template_ot43rxv', templateParams) //Service_Key  Template_Key   Parameter
+                        .then((res)=>{
+                            
+                            alert('your sms sent successfully..')
+                            document.getElementById("name").value="" ;
+                            document.getElementById("email").value ="" ;
+                            document.getElementById("message").value ="";
+
+                            document.getElementById("name").style.border='1px solid #ccc'
+                            document.getElementById("email").style.border='1px solid #ccc'
+                            document.getElementById("message").style.border='1px solid #ccc'
+                        })
+                        .catch((err)=>alert('failed..',err));
+                            name==""
+                            email==""
+                            message==""
+                    }
+                    else{
+                        alert('please enter valid email address.')
+                        document.getElementById("email").style.color='red'
+                        document.getElementById("email").style.border='1px solid red'
+                        document.getElementById("message").style.border='1px solid #ccc' 
+                        document.getElementById("name").style.border='1px solid #ccc' 
+                    }
+
+        }
+        
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+
+        <navbar class="navbar navbar-flex">
+            <a href="/"><img class="logo" src="../images/logo.png" alt=""></a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <div class="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+            <div class="sidebar">
+                <nav class="nav-res">
+                
+                    <ul>
+                        <li class="active"><a onclick="back()" href="/">&#9962 &nbsp Home</a> </li>
+                        <li><a onclick="back()" href="/about">&#128107 &nbsp About Us</a> </li>
+                        <!-- <li><a onclick="service()" href="">&#128736 &nbsp Services &#9660</a>  -->
+                        <li><button class="service-btn-down" onclick="service()" >&#128736 &nbsp Servicess &#9660</button> 
+                            <div id="menu-show-hide" class="menu-ser">
+                                <a onclick="back()" href="/service/lumber"> &#x261B Lumber Takeoff</a>
+                                <a onclick="back()" href="/service/roofing"> &#x261B Roofing Takeoff</a>
+                                <a onclick="back()" href="/service/commercial"> &#x261B Commercial Takeoff</a>
+                                <a onclick="back()" href="/service/hardware"> &#x261B Hardware</a>
+                                <a onclick="back()" href="/service/drywall"> &#x261B Drywall Takeoff</a>
+                                <a onclick="back()" href="/service/residential"> &#x261B Residential Takeoff</a>
+                            </div>
+                        </li>
+                        <li><a onclick="back()" href="/example">&#127895 &nbsp Examples</a> </li>
+                        <li><a onclick="back()" href="#contact">&#9733 &nbsp Carrier</a> </li>
+                        <li><a onclick="back()" href="#">&#9743 &nbsp Contact Us</a> </li>
+                        <li><a onclick="back()" href="#contact">&#9742 &nbsp Feedback</a> </li>
+                        
+                    </ul>
+                </nav>
+                <div class="fa-social">
+                    <a onclick="back()" href="#" class="fa fa-facebook"></a>
+                    <a onclick="back()" href="#" class="fa fa-twitter"></a>
+                    <a onclick="back()" href="https://www.linkedin.com/in/yogesh-singh-abb0191b7/" class="fa fa-linkedin"></a>
+                    <a onclick="back()" href="#" class="fa fa-skype"></a>
+
+                </div>
+            </div>
+            <nav class="nav-ul">
+                
+                <ul>
+                    <li class="active"><a href="/">Home</a> </li>
+                    <li><a href="/about">About Us</a> </li>
+                    <li class="drop-nav-el" ><a href="/#service">Services</a>
+                        <div class="drop-nav">
+                            <a style="display: block; padding: 15px 0;" href="/service/lumber"> &#x261B Lumber Takeoff</a>
+                            <a style="display: block; padding: 15px 0;" href="/service/roofing"> &#x261B Roofing Takeoff</a>
+                            <a style="display: block; padding: 15px 0;" href="/service/commercial"> &#x261B Commercial Takeoff</a>
+                            <a style="display: block; padding: 15px 0;" href="/service/hardware"> &#x261B Hardware</a>
+                            <a style="display: block; padding: 15px 0;" href="/service/drywall"> &#x261B Drywall Takeoff</a>
+                            <a style="display: block; padding: 15px 0;" href="/service/residential"> &#x261B Residential Takeoff</a>
+                        </div>
+                    </li>
+                    <li><a href="/example">Examples</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                   
+                </ul>
+            </nav>
+        </navbar>
+        
+    </header>
+
+  <div class="img-cont">
+
+    <p >We appreciate you for comming our this page <br>We hope you find out services helpful so please fill your concern on below and give us at least one chance to talk to you</p>
+
+  </div>
+  <div class="back">
+    <h1 id="contact">CONTACT-US</h1>
+  </div>
+  <div class="back-emt">
+    <div class="contact-us">
+        <div class="map">
+            <!-- <h2>Visit On Map</h2> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2459.247570437575!2d77.38812104335874!3d28.596687576273514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef898778cb0b%3A0xbb02eb92b085a10a!2sSunil%20sports%20cloths!5e0!3m2!1sen!2sin!4v1686642296193!5m2!1sen!2sin"style="width: 100%;" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form-cont">
+            <h2>Contact Us</h2>
+            <!-- <form action="#" class="contact-form contact-sent"> -->
+            <!-- <div class="contact-sent"> -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input onchange="emailvalid()" type="email" id="email" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea rows="6" cols="10" id="message" name="message" required></textarea>
+              
+                <input onclick="sendemail()" type="submit" value="Send">
+              <!-- </form> -->
+            <!-- </div> -->
+        </div>
+    </div>
+  </div>
+   
+    
+
+
+    <div class="footbar">
+        <div>
+            <h1 style="text-align: center;">Interested In Our Estimation Services?</h1>
+            <a id="get-btn" href="/contact/#contact">Please fill contact-us</a>
+        </div>
+        <div class="inner-foot">
+            <div class="foot-part">
+                <img src="/images/logo.png" alt="loading..">
+                <p>We are your Trusted Partner for Building Estimation and Modelling Services. <br> At Surya Group, we specialize in providing comprehensive estimation and modelling services tailored to meet the needs of contractors, architects, engineers, property owners, builders, and service providers across the United States & other North American States<br><br> This site was developed and maintaine by Mr. Suraj singh <br>
+                    click <a style="color: #9d90ff; display: inline;" target="_blank" href="http://93.188.162.45:8000/">here</a> for more detail about developer and contact related queries</p>
+            
+            </div>
+            <div class="foot-part">
+                <h2>Services</h2>
+                <a class="h2-underline" href="/service/lumber">Lumber Takeoff</a>
+                <a class="h2-underline" href="/service/roofing">Roofing Takeoff</a>
+                <a class="h2-underline" href="/service/drywall">Drywall Takeoff</a>
+                <a class="h2-underline" href="/service/residential">Residential Takeoff</a>
+            </div>
+            <div class="foot-part">
+                <h2>Quick Link</h2>
+                <a class="h2-underline" href="/about">About Us</a>
+                <a class="h2-underline" href="/commercial">Services</a>
+                <a class="h2-underline" href="#">Examples</a>
+                <a class="h2-underline" href="#">Contact Us</a>
+            </div>
+            <div class="foot-part">
+                <h2>Get in touch</h2>
+                <a class="h2-underline" href="mailto:estimates@suryagroup.tech">Estimates@suryagroup.tech</a>
+                <a class="h2-underline" href="tel:9634377090">+91 9634377090</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="text-align: center;"> &copy 2023 www.suryagroup.tech All rights reserved.</p>
+    </footer>
+    <script src="../javascript/homejava.js"></script>
+    
+</body>
+</html>

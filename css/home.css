@@ -1,0 +1,307 @@
+.back-img{
+    height: 100vh;
+    background-color: black;
+
+   
+}
+.back-img::before{
+    content: '';
+    background: url('../images/backimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    height: 100vh;
+    background-position:0px 0px;
+    animation: movingback 10s linear infinite;
+}
+
+
+.content-out{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeline 1.5s cubic-bezier(0.14, 0.84, 0.52, -0.29);;
+    /* transition: all .4s ease-in; */
+}
+
+@keyframes fadeline{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.content-out h1{
+    font-size: 5rem;
+}
+.content-out p{
+    font-size: 19px;
+}
+
+
+.back-img2{
+    background-color: black;
+    height: 60vh;
+    position: relative;
+}
+.back-img2::before{
+    content: '';
+    background: url(../images/backimg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+.cover-img-btn{
+    background: #7f80ff;
+    font-size: 28px;
+    padding: 8px;
+    font-weight: 600;
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    width: 200px;
+}
+.padding-top45{
+    padding-top: 40px;
+}
+.section{
+    height: 100%;
+    padding: 50px 0;
+    /* background: cadetblue; */
+    /* background: #7d88ee; */
+    background: #aeb4f5;
+}
+.service-part{
+    color: white;
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    z-index: 3;
+    max-width: 30%;
+    /* height: 300%; */
+    box-shadow: 0px 1px 40px -20px black;
+    /* border: 1px solid white; */
+    background-color: rgb(0, 0, 0);
+
+}
+.inner-ser{
+    position: relative;
+}
+
+
+#for-back-img1::before{
+    content: '';
+    background: url(https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2020/04/construction-industry-1-1536x859.jpg&nocache=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+#for-back-img2::before{
+    content: '';
+    background: url(https://www.wealthmanagement.com/sites/wealthmanagement.com/files/roof%20repair-GettyImages-184271773-1540.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+#for-back-img3::before{
+    content: '';
+    background: url(https://nebldgsupply.com/wp-content/uploads/2019/10/eco-friendly-drywall-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+#for-back-img4::before{
+    content: '';
+    background: url(https://th.bing.com/th/id/OIP.4lUQIYgBVFGCDRdFX-rjVQHaE8?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+#for-back-img5::before{
+    content: '';
+    background: url(https://th.bing.com/th/id/R.67516a380eeb4936bf900362014fecbc?rik=KeQWRx%2f4sCq%2fng&riu=http%3a%2f%2freidsteel.com%2fwp-content%2fuploads%2f2016%2f06%2fcommercial-steel-building-example03c.jpg&ehk=ajZONOUAE6LxvHA%2bsKG91GxLjzqgt0HBFZXeuhcXQNM%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+#for-back-img6::before{
+    content: '';
+    background: url(https://i.pinimg.com/originals/34/85/4d/34854dbc9209608428a580ec4c96e224.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.service-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us{
+   height: 100%;
+   background-color: black;
+   position: relative;
+   z-index: 0;
+   top: -70px;
+   width: 90%;
+   margin: auto;
+   box-shadow: -12px 17px 14px -13px black;
+}
+.contact-us::before{
+    content: '';
+    background: url(https://isme.ie/wp-content/uploads/2018/07/banner_data_protection.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    z-index: -1;
+}
+
+.inner-cont{
+    padding: 5vh 0;
+    /* height: 45vh; */
+}
+.inner-cont h1{
+    font-size: 35px;
+    color: cornflowerblue;
+}
+
+.getintouch{
+    width: 100%;
+    font-size: 19px;
+    color: white;display: flex;
+    justify-content: space-evenly;
+}
+#call-icon::before{
+    content: '\eb15';
+}
+#call-icon{
+    font-size: 32px;
+    color: #9cd428;
+    padding: 8px;
+}
+.a-color{
+    color: white;
+}
+.a-block{
+    display: block;
+}
+/* #service {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    background: #7f80ff;
+    width: 170px;
+    margin: auto;
+    
+} */
+.more-about{
+    background-color: #bebef9;
+}
+.fa-call::before{
+    content: '\f095';
+}
+.fa-contact::before{
+    content:'\f075' ;
+}
+
+
+.intro{
+    padding: 50px 0;
+    max-width: 75%;
+    margin: auto;
+}
+.more-less-btn{
+    padding: 10px 10px;
+    /* margin: 3px 0; */
+    width: 100%;
+    background-color:#7784f3;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+.section-more{
+    border: 1px solid #6a6a6a;
+    border-radius: 10px;
+    margin: 5px 0;
+    background: white;
+}
+.more-less-btn h2{
+    display: inline-block;
+    float: left;
+}
+.more-less-btn span{
+    float: right;
+    font-size: 25px;
+}
+.history{
+    display: none;
+    padding: 10px;
+}
+.estimate-way{
+    width: 20%;
+    margin: auto;
+    background: rgb(22, 36, 47);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,231 @@
+
+
+
+.btn-ex{
+    width: 522px;
+}
+.flex-d{
+    display: block;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.showexample{
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 5px;
+
+}
+
+
+/*  ----------------------Large Desktops and Widescreen Displays (1201px and above)------------------ */
+@media screen and (min-width:1201px){
+    .pdf_height{
+        height: 80vh;
+    }
+    .about-banner {
+        height: 50vh;
+    }
+    .about-img{
+    padding: 15vh;
+}
+    .foot-part{
+    max-width: 35%;
+  }
+
+}
+
+
+
+
+
+/*  -----------------------------Medium-sized Laptops and Desktops (993px to 1200px):--------------------------------- */
+@media screen and (min-width:993px) and (max-width:1200px){
+    .pdf_height{
+        height: 80vh;
+    }
+    
+    .about-banner {
+        height: 50vh;
+    }
+    .about-img{
+        margin: auto;
+        padding: 26px 0;
+}
+    .foot-part{
+    max-width: 35%;
+  }
+    
+    .content-out {
+        max-width: 900px;
+    }
+}
+
+
+/*  --------------------------------Tablets and Small Laptops (577px to 992px):--------------------------------------- */
+@media screen and (min-width:600px) and (max-width:992px){
+
+    .estimate-way {
+        width: 100%;
+    }
+    
+    .pdf_height{
+        height: 75vh;
+    }
+    
+    .lumber {
+        padding: 26px 16px;
+        margin: 5% 3%;
+    }    
+    .about-banner {
+        height: 30vh;
+        margin-top: 60px;
+    }
+    .nav-ul ul li {
+        padding: 2px 11px;
+    }
+    .nav-ul {
+        padding-right: 2%;
+    }
+    .content-out {
+        max-width: 550px;
+        top: 60%;
+    }
+    .content-out h1 {
+        font-size: 4rem;
+    }
+}
+
+
+/*  ----------------------------------------Mobile Devices (576px and below)---------------------------------- */
+@media screen and (max-width:599px){
+    .estimate-way {
+        width: 100%;
+    }
+
+
+    
+    
+    #myVideo{
+        width: auto;
+        max-width: 470px;
+    }
+    
+
+    .intro {
+        max-width: 95%;
+    }
+    .img-cont {
+        height: auto;
+        margin-top: 70px;
+    }
+    .img-cont p{
+        padding: 65px 45px;
+        font-size: 16px;
+    }
+    .form-cont{
+        width: 550px;
+    }
+    .map{
+        width: 550px;
+    }
+    .back {
+        height: 11vh;
+    }
+    .back h1{
+            font-size: 17px;
+            width: 32%;
+    }
+    
+    .lumber-h {
+        font-size: 16px;
+    }
+    .lumber {
+        padding: 30px 7px;
+        margin: 5% 4%;
+    }
+    .about-banner {
+        margin-top: 60px;
+        height: 25vh;
+    }
+    .about-img{
+        padding: 36px 20px;
+}
+    .foot-part{
+        margin-top: 5vh;
+    }
+    .inner-foot {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 2vh;
+    }
+    .inner-cont-type{
+        padding: 22px;
+    }
+    .getintouch{
+        flex-direction: column;
+    }
+    .service-part{
+        max-width: 480px;
+        height: 32vh;
+    }
+    .service-all{
+        display: flex;
+        /* width: 95%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes movingback{
+        25%{
+            background-position: -150px 0px;
+        }
+        50%{
+        background-position: -300px 50px;
+        }
+        75%{
+            background-position: -100px 50px;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+    .cover-img-btn {
+        font-size: 20px;
+        width: 175px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn{
+        margin-right: 20px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .nav-ul {
+        display: none;
+    }
+    .content-out {
+        max-width: 462px;
+        top: 65%;
+    }
+    .content-out h1 {
+        font-size: 3.4rem;
+    }
+    .content-out p {
+        font-size: 16px;
+    }
+
+}
+

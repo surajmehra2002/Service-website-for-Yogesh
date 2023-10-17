@@ -1,0 +1,92 @@
+.about-banner{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #92a7f9;
+    font-size: 2rem;
+    position: relative;
+    background-color: black;
+    z-index: -2;
+}
+.about-banner::before{
+    content: '';
+    background: url(https://hexaware.com/wp-content/uploads/2020/08/GMPS-4.0-Global-Capacity-Planning-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    z-index: -1;
+}
+.about-img{
+    /* background: url(https://wallpaperaccess.com/full/2489680.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-dtel{
+    opacity: 0.8;
+    background-color: white;
+    padding: 2%;
+}
+.our-clients{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* height: 40vh; */
+}
+.clients{
+    /* background: url(https://th.bing.com/th/id/R.07d04fe60b51fb92fe3c12dfcae3d247?rik=S3ErdVM5IAk0qA&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2010%2f11%2f19%2f8235408%2f1_PlanSwiftPRLogo.gif&ehk=NW6XwYXCQTkPPcEaGa1AFSko0M6PlGxubKs%2bvannXKE%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+    /* width: 25%;
+    height: 30vh;
+        background-color: rgb(0, 0, 0);
+
+    padding: 10px 10px;
+    margin: 10px 10px;
+
+    background: url(../images/ourclients.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -90px 0px;
+    border: 3px solid darkblue;
+    border-radius: 5px;
+    position: relative; */
+}
+.clients img{
+    /* display: block;
+    line-height: 7; */
+    width: 400px;
+    height: 100px;
+    
+
+}
+
+.clients:hover{
+    .about-dtel{
+       
+        display: none;
+    }
+    /* cursor: pointer; */
+    
+    
+    /* .clients::before{
+        content: ''; 
+        background-color: black;
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;    
+        z-index: 1;
+
+    } */
+}
